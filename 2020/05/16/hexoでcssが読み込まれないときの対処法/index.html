@@ -473,10 +473,10 @@ var BLOG = { ROOT: '/SimpleBlog/', SHARE: true, REWARD: true };
     var OriginTitile = document.title, titleTime;
     document.addEventListener('visibilitychange', function() {
         if (document.hidden) {
-            document.title = 'さようなら';
+            document.title = '簡易ブログ';
             clearTimeout(titleTime);
         } else {
-            document.title = 'ようこそ';
+            document.title = '簡易ブログ';
             titleTime = setTimeout(function() {
                 document.title = OriginTitile;
             },2000);
